@@ -22,7 +22,7 @@ interface Message
      *
      * @return \Protobuf\Message
      */
-    public static function fromStream($stream, Configuration $configuration = null);
+    public static function fromStream($stream, Configuration ?$configuration = null);
 
     /**
      * Serializes the message and returns a stream containing its bytes.
@@ -31,7 +31,7 @@ interface Message
      *
      * @return \Protobuf\Stream
      */
-    public function toStream(Configuration $configuration = null);
+    public function toStream(Configuration ?$configuration = null);
 
     /**
      * Compute the number of bytes that would be needed to encode the message

@@ -28,7 +28,7 @@ class Stream
      *
      * @throws \InvalidArgumentException if the stream is not a stream resource
      */
-    public function __construct($stream, $size = null)
+    public function __construct($stream, ?$size = null)
     {
         if ( ! is_resource($stream)) {
             throw new InvalidArgumentException('Stream must be a resource');
@@ -253,7 +253,7 @@ class Stream
      *
      * @throws \InvalidArgumentException if the $resource arg is not valid.
      */
-    public static function wrap($resource = '', $size = null)
+    public static function wrap($resource = '', ?$size = null)
     {
         if ($resource instanceof Stream) {
             return $resource;
@@ -290,7 +290,7 @@ class Stream
      *
      * @return \Protobuf\Stream
      */
-    public static function fromString($resource = '', $size = null)
+    public static function fromString($resource = '', ?$size = null)
     {
         $stream = fopen('php://temp', 'r+');
 

@@ -17,7 +17,7 @@ abstract class AbstractMessage implements Message
      * @param \Protobuf\Stream|resource|string $stream
      * @param \Protobuf\Configuration          $configuration
      */
-    public function __construct($stream = null, \Protobuf\Configuration $configuration = null)
+    public function __construct(?$stream = null, ?\Protobuf\Configuration $configuration = null)
     {
         if ($stream === null) {
             return;

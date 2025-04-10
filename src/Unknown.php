@@ -30,7 +30,7 @@ class Unknown
      * @param integer $type
      * @param mixed   $value
      */
-    public function __construct($tag = 0, $type = null, $value = null)
+    public function __construct($tag = 0, $type = null, ?$value = null)
     {
         $this->tag   = $tag;
         $this->type  = $type;

@@ -17,7 +17,7 @@ class MessageSerializer implements Serializer
     /**
      * @param \Protobuf\Configuration $config
      */
-    public function __construct(Configuration $config = null)
+    public function __construct(Configuration ?$config = null)
     {
         $this->config = $config ?: Configuration::getInstance();
     }

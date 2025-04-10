@@ -57,7 +57,7 @@ class ExtensionField
      * @param callback $sizeCalculator
      * @param string   $method
      */
-    public function __construct($extendee, $name, $tag, $reader, $writer, $sizeCalculator, $method = null)
+    public function __construct($extendee, $name, $tag, $reader, $writer, $sizeCalculator, ?$method = null)
     {
         $this->tag            = $tag;
         $this->name           = $name;

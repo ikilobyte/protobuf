@@ -50,7 +50,7 @@ class StreamWriter
      * @param string           $bytes
      * @param int              $length
      */
-    public function writeBytes(Stream $stream, $bytes, $length = null)
+    public function writeBytes(Stream $stream, $bytes, ?$length = null)
     {
         if ($length === null) {
             $length = mb_strlen($bytes, '8bit');
@@ -290,7 +290,7 @@ class StreamWriter
      * @param \Protobuf\Stream $value
      * @param int              $length
      */
-    public function writeStream(Stream $stream, Stream $value, $length = null)
+    public function writeStream(Stream $stream, Stream $value, ?$length = null)
     {
         if ($length === null) {
             $length = $value->getSize();

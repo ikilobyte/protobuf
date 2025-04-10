@@ -38,7 +38,7 @@ class ReadContext
      * @param \Protobuf\Binary\StreamReader         $reader
      * @param \Protobuf\Extension\ExtensionRegistry $extensionRegistry
      */
-    public function __construct($stream, StreamReader $reader, ExtensionRegistry $extensionRegistry = null)
+    public function __construct($stream, StreamReader $reader, ExtensionRegistry ?$extensionRegistry = null)
     {
         if ( ! $stream instanceof \Protobuf\Stream) {
             $stream = Stream::wrap($stream);

@@ -26,7 +26,7 @@ class ExtensionFieldMap extends SplObjectStorage implements Collection
     /**
      * @param string $extendee
      */
-    public function __construct($extendee = null)
+    public function __construct(?$extendee = null)
     {
         $this->extendee = trim($extendee, '\\');
     }
