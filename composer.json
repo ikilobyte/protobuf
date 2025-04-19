@@ -1,5 +1,5 @@
 {
-    "name"          : "protobuf-php/protobuf",
+    "name"          : "ikilobyte/protobuf",
     "description"   : "PHP implementation of Google's Protocol Buffers",
     "keywords"      : ["protobuf", "protocol buffer", "serializing"],
     "homepage"      : "https://github.com/protobuf-php/protobuf",
